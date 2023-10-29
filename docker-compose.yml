@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  agency_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: agency_app_container
+    ports:
+      - "3000:80"
+    # volumes:
+    #   - ./src:/app/src
+    
